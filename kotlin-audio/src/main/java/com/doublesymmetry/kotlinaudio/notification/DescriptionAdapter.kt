@@ -62,7 +62,7 @@ class DescriptionAdapter(private val metadataProvider: NotificationMetadataProvi
 
         disposable = imageLoader.enqueue(request)
 
-        return artworkBitmap ?: placeholderImage
+        return artworkBitmap
     }
 
     private fun getArtworkSource(artworkUrl: String?, mediaMetadata: MediaMetadata): Any? {
